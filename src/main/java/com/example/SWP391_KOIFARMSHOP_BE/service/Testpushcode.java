@@ -13,8 +13,12 @@ public class Testpushcode {
     public ProductResponse test(ProductRequest productRequest){
         ProductResponse p = new ProductResponse();
         if(productRequest.getBreed().isEmpty()){
+            System.out.println("Rỗng");
+            System.out.println("Rỗng");
+            System.out.println("Rỗng");
+            System.out.println("Rỗng");
 
-
+            System.out.println("Rỗng");
         }
         return p;
     }
