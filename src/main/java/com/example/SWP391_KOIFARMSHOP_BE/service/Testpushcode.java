@@ -10,15 +10,12 @@ import org.springframework.stereotype.Service;
 public class Testpushcode {
     @Autowired
     private Product product;
-    public ProductResponse test(ProductRequest productRequest){
+    public ProductResponse test(ProductRequest productRequest) {
         ProductResponse p = new ProductResponse();
-        if(productRequest.getBreed().isBlank()){
-            System.out.println("Rỗng");
-            System.out.println("Rỗng");
-            System.out.println("Rỗng");
-            System.out.println("Rỗng");
-            System.out.println("Rỗng");
+        if (productRequest.getBreed().isBlank()) {
+            System.out.println("Field Breed is blank!");
         }
         return p;
+    
     }
 }
