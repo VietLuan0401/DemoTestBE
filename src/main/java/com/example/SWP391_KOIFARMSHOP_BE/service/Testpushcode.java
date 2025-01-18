@@ -12,12 +12,11 @@ public class Testpushcode {
     private Product product;
     public ProductResponse test(ProductRequest productRequest){
         ProductResponse p = new ProductResponse();
-        if(productRequest.getBreed().isEmpty()){
+        if(productRequest.getBreed().isBlank()){
             System.out.println("Rỗng");
             System.out.println("Rỗng");
             System.out.println("Rỗng");
             System.out.println("Rỗng");
-
             System.out.println("Rỗng");
         }
         return p;
